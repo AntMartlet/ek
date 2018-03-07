@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <link rel="shortcut icon" href="">
+        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+        <link href="./css/style.css" rel="stylesheet"> 
+        <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <![endif]-->
+    </head>
+    <body class="main">
+        <div class="all">
+            <section id="login" class="login-box">
+                <form id="form" class="pure-form">
+                    <fieldset>
+                        <legend>Login Into Your Account</legend>
+
+                        <input type="text" class="inputUserName" id= "user" placeholder="User Name" autofocus>
+                        <div id="userValidation" class="message"></div>
+                        <input type="password" class="inputPassword" id= "password" placeholder="Password">
+                        <div id="passwordValidation" class="message"></div>
+                        <button type="button" class="pure-button pure-button-success"  onclick="validate()">Sign in</button>
+                        <div for="remember" class="remember">
+                            <input id="remember" type="checkbox"> <span>Remember Me</span>
+                        </div>
+                         <a class="inscription">
+                             Forgot Password?
+                         </a>
+                    </fieldset>
+                </form>
+                <div class="middleSpace">
+                    <div class="middleLineFirst"></div>
+                    <span>or</span>
+                    <div class="middleLineSecond"></div>
+                </div>
+                <div class="social">
+                    <a class='link' onclick="">
+                        Don’t have an account? Sign Up!
+                    </a>
+                    <a class="btn pure-button btn-social btn-fb" onclick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-foursquare']);">
+                        <span class="fa fa-fb"></span> Sign In with Facebook
+                    </a>
+                    <a class="btn pure-button btn-social btn-tw" onclick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-foursquare']);">
+                        <span class="fa fa-tw"></span> Sign In with Twitter
+                    </a>
+                    <a class="btn pure-button btn-social btn-g" onclick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-g']);">
+                        <span class="fa fa-g"></span> Sign In with Google+
+                    </a>
+                </div>
+            </section>
+        </div>
+
+        <script src="./js/jquery-2.1.4.js"></script>       
+        <script src="./js/scripts.js"></script> 
+    </body>
+</html>

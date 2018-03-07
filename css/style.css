@@ -1,0 +1,296 @@
+@font-face {
+  font-family: MuseoSlab;
+  src: url(../fonts/Museo_Slab_500.otf) format("opentype");
+  font-weight: 500; 
+  font-style: normal; 
+}
+@font-face {
+  font-family: MuseoSlab;
+  src: url(../fonts/Museo_Slab_300.otf) format("opentype");
+  font-weight: 300; 
+  font-style: italic; 
+}
+@font-face {
+  font-family: MuseoSlab;
+  src: url(../fonts/Museo_Slab_300italic.otf) format("opentype");
+  font-weight: 300; 
+  font-style: italic; 
+}
+* {
+    margin:0;
+    font-family: MuseoSlab;
+    font-weight: 300;
+    font-style: normal;
+    padding:0;             
+}
+.all{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    overflow: auto;   
+    background-image: linear-gradient(to right, #322a2f, #4e4e4e 57%, #5d5759);
+    box-shadow: inset 0 0 200px 0 rgba(0, 0, 0, 0.75);
+}
+.main {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #322a2f, #4e4e4e 57%, #5d5759);
+    box-shadow: inset 0 0 200px 0 rgba(0, 0, 0, 0.75);
+}
+.login-box {
+    width: 740px;
+    height: 353px;
+    padding: 40px 40px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 15px;
+
+}
+.pure-form, 
+.social{
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+.pure-form{
+    width:  calc(50% - 10px);
+    padding: 5px  10px 5px 8px;
+}
+.social{
+    padding-right: 0px;
+    width: calc(50% - 63px);
+    padding: 5px 4px 5px 15px;
+    letter-spacing: -0.17px;   
+}
+input[type = text].inputUserName,
+input[type = password].inputPassword,
+.pure-button{
+    border-radius: 0;
+    height: 40px;
+    padding-left: 13px;
+    width: 100%;
+}
+.pure-button-success{
+    background-color: #79b42b;
+    border: solid 1px #79b42b;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+}
+input[type = "checkbox" i]#remember{
+    width: 16px;
+    height: 16px;
+    background-color: #dddddd;
+    border: 0;
+    outline: 0;
+    vertical-align: sub;
+    cursor: pointer;
+}
+.inscription, 
+.remember{
+    padding: 4px 0px; 
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(50% - 2px);
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 2.31;
+    color: #b6b6b6;
+}
+.remember{
+    cursor: default;    
+}
+.remember span{
+    padding-left: 5px;
+}
+.inscription{
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 6px;
+    cursor: pointer;   
+}
+.pure-form legend{
+    font-size: 21px;
+    font-weight: 500;
+    text-align: left;
+    color: #474646;
+    margin-bottom: 25px;
+    border-bottom: 0;
+    padding: 0;
+    cursor: default;    
+}
+.pure-form fieldset {
+    padding: 0;
+}
+.social .link{
+    display: block;
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 6px;
+    margin-bottom: 30px;
+    text-align: right;
+    color: #43a1db;
+    cursor: pointer; 
+}
+.btn-social + .btn-social{
+    margin-top: 20px;
+}
+.btn-social:last-child{
+    margin-bottom: 20px;
+}
+.middleSpace{    
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 65px;
+}
+.middleSpace span{
+    font-size: 14px;
+    font-style: italic;
+    line-height: 2.14;
+    color: #919191;
+}
+.middleLineFirst, 
+.middleLineSecond {
+    width: 1px;
+    height: 90px;
+    object-fit: contain;
+    margin: 15px auto;
+    background-image: linear-gradient(to top, #eaeaea, #ffffff 80%);
+}
+.middleLineSecond {
+    background-image: linear-gradient(to top, #ffffff, #eaeaea 80%);
+}
+.btn-social {
+    position: relative;
+    height: 40px;
+    line-height: 1.85;
+    padding-left: 60px;
+    font-size: 15px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.btn-social>:first-child {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 49px;
+    text-align: center;
+}
+.btn{
+    display: block;
+    color: #fff;
+}
+.btn-tw{
+    background-color: #55acee;
+}
+.btn-g{
+    background-color: #de4c34;
+}
+.btn-fb{
+    background-color: #3b5998;
+}
+.fa {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-tw {
+    background: url('../images/t.png') center no-repeat #40a2d1;
+}
+.fa-g {
+    background: url('../images/g.png') center no-repeat #ce3e26;
+}
+.fa-fb {
+    background: url('../images/f.png') center no-repeat #354f88;
+}
+.inputUserName{
+    background: url('../images/name.png') center right 5% no-repeat transparent;
+}
+.inputPassword {
+    background: url('../images/lock.png') center right 5% no-repeat transparent;
+}
+input{
+    font-size: 15px;
+    font-weight: 300;
+    text-align: left;
+    color: #b6b6b6;
+    padding-left: 15px;
+}
+input::-webkit-input-placeholder,
+input::-moz-placeholder,
+input:-moz-placeholder,
+input:-ms-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: left;
+    color: #b6b6b6;
+    padding-left: 15px;
+}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+.message{
+    color: #f55;
+    text-align: right;
+    height: 20px;
+    font-size: 12px;
+}
+
+@media (max-width: 720px) {
+  .login-box {
+    width: 370px;
+    height: auto;
+    min-width: 320px;
+  }
+  .pure-form, 
+  .social,
+  .middleSpace {
+    width:100%;
+  }
+  .middleSpace{
+    display: inline-block;
+  }
+  .middleSpace span{
+    display: inline-block;
+    width: auto;
+    margin: 0px 15px;
+  }
+  .middleLineFirst, 
+  .middleLineSecond {
+    display: inline-block;
+    height: 1px;
+    width: 90px;
+    margin: initial;
+    vertical-align: middle;
+    background-image: linear-gradient(to left, #eaeaea, #ffffff 80%);
+  }   
+  .middleLineSecond {
+    background-image: linear-gradient(to right, #eaeaea, #ffffff 80%);
+  }  
+  .pure-form, 
+  .social{
+    padding: 5px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .all{
+    position: relative;
+  }
+}
